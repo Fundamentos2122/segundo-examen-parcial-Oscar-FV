@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Document</title>
+</head>
+
+<body class="container bg-secondary">
+
+    <!-- Titulo -->
+    <div class="row center-content">
+        <div class="col-8 bg-warning text-header">
+            <p class="h1 tittle-light text-light">Lista De Tareas</p>
+        </div>
+    </div>
+
+    <!-- contenedor de checkbox y boton -->
+    <div class="row center-content" id="ver_todo">
+        <div class="col-8 bg-light">
+            <div class="row space-content padding-content1">
+
+                <div class="col-auto">
+                    <input type="checkbox" name="verTodo">
+                    <label for="verTodos">Ver Todos</label>
+                </div>
+
+                <button class="btn btn-warning" data-toggle="modal" data-target="#modal_test">Nueva</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de tareas -->
+    <div id="lista_tareas">
+    </div>
+    
+
+    <div class="modal" id="modal_test">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Nueva Tarea</h5>
+                <button class="btn btn-danger" data-dismiss="#modal_test">X</button>
+            </div>
+            <form name="nueva_tarea">
+                <div class="modal-body" id="modal_body">
+
+                        <!-- alerta de campos incompletos -->
+                        
+                        <!-- Form del modal -->
+                        <div class="row space-content padding-content2" id="div_form">
+                                <div class="col-auto">
+                                    <label for="Titulo">Titulo</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" name="Titulo" class="textbox">
+                                </div>
+                        </div>
+                        <div class="row space-content padding-content2">
+                            <div class="col-auto">
+                                <label for="Descripcion">Descripción</label>
+                            </div>
+                            <div class="col-auto">
+                                <textarea class="textbox" name="Descripcion" cols="10" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="row space-content padding-content2">
+                            <div class="col-auto">
+                                <label for="Fecha">Fecha</label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="textbox" type="date" name="Fecha" id="Fecha">
+                            </div>
+                        </div>
+                </div>
+
+                    <div class="modal-footer">
+                        <input class="btn btn-success" type="submit" value="Guardar" data-target="#modal_test">
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

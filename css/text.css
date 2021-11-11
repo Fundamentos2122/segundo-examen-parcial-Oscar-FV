@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.tittle-light{
+    font-weight: 100;
+}
+
+h1, .h1{
+    font-size: 3em;
+}
+
+
+h2, .h2{
+    font-size: 2em;
+}
+
+h3, .h3{
+    font-size: 1.75em;
+}
+
+h4, .h4{
+    font-size: 1.5em;
+}
+
+h5, .h5{
+    font-size: 1.25em;
+}
+
+h6, .h6{
+    font-size: 1em;
+}
+
+p{
+    margin-top: 0;
+}
+
+.display-1{
+    font-size: 6em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.display-2{
+    font-size: 5.5em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.display-3{
+    font-size: 4.5em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.display-4{
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+p{
+    margin-top: 0;
+    width: auto;
+}
+
+.text-header{
+    font-size: 1.3em;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-cursiva{
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+.text-primary{
+    color: var(--color-primary);
+}
+
+.text-secondary{
+    color: var(--color-secondary);
+}
+
+.text-succes{
+    color: var(--color-success);
+}
+
+.text-info{
+    color: var(--color-info);
+}
+
+.text-warning{
+    color: var(--color-warning);
+}
+
+.text-danger{
+    color: var(--color-danger);
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.text-dark{
+    color: var(--color-dark);
+}
+
+@media (min-width: 660px){
+    h1, .h1{
+        font-size: 5em;
+    }
+}
